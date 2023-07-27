@@ -106,7 +106,7 @@ body {
 .animais-lista::-webkit-scrollbar-thumb {
   background: #fb5;
   border-left: 4px solid #faf6ed;
-  border-rigt: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
 }
 
 .animais-lista::-webkit-scrollbar-track {
