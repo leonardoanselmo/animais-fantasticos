@@ -16,5 +16,31 @@ console.log(titulo);
 
 // Selecione o último p do site
 const paragrafos = document.querySelectorAll('p');
+console.log(paragrafos[0].innerText);
 console.log(paragrafos[paragrafos.length-1]);
 
+paragrafos.forEach(function(item){
+  console.log(item.innerText);
+});
+
+allImagens.forEach(function(item, index, array){
+  console.log(item, index, array);
+})
+
+const titulos = document.getElementsByClassName('titulo');
+const titulosArray = Array.from(titulos);
+
+titulosArray.forEach(function(item){
+  console.log(item.innerHTML);
+})
+
+const imgs = document.querySelectorAll('img');
+
+imgs.forEach((item) => {
+  console.log(item);
+})
+
+//Igual ao de cima, apenas retirei o ()
+imgs.forEach(item => {
+  console.log(item);
+})
