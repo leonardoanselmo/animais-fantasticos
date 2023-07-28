@@ -24,6 +24,10 @@ body {
   grid-column: 3 / 5;
 }
 
+.azul {
+  background: teal;
+}
+
 .menu {
   margin-top: 2rem;
   margin-bottom: 2rem;
