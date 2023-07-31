@@ -20,16 +20,18 @@ body {
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
+/* Teste  */
 html.textomaior {
   font-size: 36px;
 }
 
-.header {
-  grid-column: 3 / 5;
-}
-
 .azul {
   background: teal;
+}
+/* ----- Fim do Teste ------  */
+
+.header {
+  grid-column: 3 / 5;
 }
 
 .menu {
@@ -105,6 +107,10 @@ html.textomaior {
   height: 370px;
   overflow-y: scroll;
   grid-column: 2;
+}
+
+.animais-lista li {
+  cursor: pointer;
 }
 
 .animais-lista::-webkit-scrollbar {
@@ -216,4 +222,25 @@ html.textomaior {
   .copy {
     margin-bottom: 0px;
   }
+}
+
+.js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
+  animation: show .5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+
 }
